@@ -17,6 +17,9 @@ public class StudyAssignment {
     //Better way to write
 
     boolean checkStudyBetter(Student student) {
+
+        if (student == null) return false;
+
         return student.isLoggedIn() &&
                 "Lee".equals(student.getTeacherName()) &&
                 student.isEnrolledInMaths() &&
